@@ -7,9 +7,7 @@ import { useSelector } from 'react-redux';
 
 import { loadStripe } from '@stripe/stripe-js';
 import { makePaymentRequest } from '@/utils/api';
-const stripePromise = loadStripe(
-	process.env.NEXT_PUBLIC_STRAPE_PUBISHABLE__KEY
-);
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRAPE_PUBISHABLE_KEY);
 
 const Cart = () => {
 	//payment states
