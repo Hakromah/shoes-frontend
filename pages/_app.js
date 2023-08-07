@@ -4,7 +4,8 @@ import '@/styles/globals.css';
 import Head from 'next/head';
 
 import { Provider } from 'react-redux';
-import store from '@/store/store';
+import { store, persistor } from '@/store/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 export default function App({ Component, pageProps }) {
 	return (
@@ -29,9 +30,11 @@ export default function App({ Component, pageProps }) {
 				/>
 			</Head>
 			<Provider store={store}>
-				<Header />
-				<Component {...pageProps} />
-				<Footer />
+				<PersistGate loading={'loading'} persistor={persistor}>
+					<Header />
+					<Component {...pageProps} />
+					<Footer />
+				</PersistGate>
 			</Provider>
 		</>
 	);
