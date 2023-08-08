@@ -8,12 +8,12 @@ const data = [
 	{ id: 3, name: 'Categories', subMenu: true },
 	{ id: 4, name: 'Contact', url: '/contact' },
 ];
-const subMenuData = [
-	{ id: 1, name: 'Jordan', doc_count: 11 },
-	{ id: 2, name: 'Sneakers', doc_count: 8 },
-	{ id: 3, name: 'Running shoes', doc_count: 64 },
-	{ id: 4, name: 'Football shoes', doc_count: 107 },
-];
+// const subMenuData = [
+// 	{ id: 1, name: 'T-shirts', doc_count: 11 },
+// 	{ id: 2, name: 'Sneakers', doc_count: 8 },
+// 	{ id: 3, name: 'Running shoes', doc_count: 64 },
+// 	{ id: 4, name: 'Daily wears', doc_count: 107 },
+// ];
 
 const Menu = ({ showCatMenu, setShowCatMenu, categories }) => {
 	const [categHover, setCategHover] = useState(false);
