@@ -13,7 +13,13 @@ module.exports = {
 			oswald: 'Oswald, sans-serif',
 			urbanist: 'Urbanist, sans-seri',
 		},
-		extend: {},
+		extend: {
+			transitionDuration: {
+				slow: '1000ms',
+				normal: '500ms',
+				fast: '300ms',
+			},
+		},
 	},
 	plugins: [],
 };

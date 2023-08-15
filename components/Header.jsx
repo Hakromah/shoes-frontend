@@ -7,7 +7,6 @@ import Menu from './Menu';
 import MenuMobile from './MenuMobile';
 
 import { BsCart } from 'react-icons/bs';
-import { IoMdHeartEmpty } from 'react-icons/io';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { VscChromeClose } from 'react-icons/vsc';
 import { fetchDataFromApi } from '@/utils/api';
